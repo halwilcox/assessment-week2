@@ -8,7 +8,7 @@
     Create a variable called 'gitDefinition'.
     It should be a string containing your best definition of what Git is.
 */
-
+let gitDefinition = "Git is a software created for tracking changes in any set of files"
 //CODE HERE
 
 //////////////////PROBLEM 2////////////////////
@@ -18,7 +18,7 @@
 */
 
 //CODE HERE
-
+let gitHubDefinition = "Git Hub is a code hosting platform on the internet. It backs up and stores your code incase your computer crashes. it also allows other developers and coding experts to collaborate and share projects."
 //////////////////PROBLEMS 3 - 8////////////////////
 /*
     For the next several problems you will be creating objects containing information about different git 
@@ -34,7 +34,11 @@
 */
 
 //CODE HERE
+let init = {
+    'description': 'code used to create a new Git repository',
+    'code': '$ git init'
 
+}
 //////////////////PROBLEM 4////////////////////
 /*
     Create an object called 'clone' with 'description' and 'code' properties 
@@ -42,7 +46,10 @@
 */
 
 //CODE HERE
-
+let clone {
+    'description': 'Get a copy of an existing Git repository'
+    'code': '$ git clone https://copy.clone.demand.git'
+}
 //////////////////PROBLEM 5////////////////////
 /*
     Create an object called 'status' with 'description' and 'code' properties 
@@ -50,7 +57,10 @@
 */
 
 //CODE HERE
-
+let status {
+    'description': 'displays the state of the working directory'
+    'code':'$ git status'
+}
 //////////////////PROBLEM 6////////////////////
 /*
     Create an object called 'add' with 'description' and 'code' properties 
@@ -58,16 +68,22 @@
 */
 
 //CODE HERE
-
+let add {
+    'description': 'adds content of the specified files'
+    'code': '$ git add nameoffile.js'
+}
 //////////////////PROBLEM 7////////////////////
 /*
     Create an object called 'commit' with 'description' and 'code' properties
     following the guidelines above to describe the commit command.
 */
 
+
 //CODE HERE
-
-
+let commit {
+    'description': 'commits help track milestones along the timeline of a Git project'
+    'code': '$ git commit -m "make a comment"'
+}
 //////////////////PROBLEM 8////////////////////
 /*
     Create an object called 'push' with 'description' and 'code' properties 
@@ -75,3 +91,7 @@
 */
 
 //CODE HERE
+let push {
+    'description': 'uploads local repository conent to a remote repository'
+    'code': '$ git push'
+}
