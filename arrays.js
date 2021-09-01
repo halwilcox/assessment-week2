@@ -4,13 +4,14 @@
 const faveColors = ['red', 'green', 'black']
 
 //CODE HERE
-var colorCopy = faveColorsArr.slice(0, 1, 2)
+let colorCopy = faveColors.slice()
 
 //////////////////PROBLEM 2////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
 //CODE HERE
-colorCopy.push('yellow')
+colorCopy.push("yellow");
+console.log(colorCopy)
 //////////////////PROBLEM 3////////////////////
 /*
   Using an array method, create a new array called 'middleNums' from the 
@@ -20,7 +21,8 @@ colorCopy.push('yellow')
 const numbers = [1, 2, 3, 4, 5]
 
 //CODE HERE
-var middleNums.splice(1,3)
+const middleNums = numbers.splice(1,2,3)
+console.log(middleNums);
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -34,9 +36,19 @@ var middleNums.splice(1,3)
   to the answers array. 
   Return the answers array inside of the function.
 */
-function bigOrSmall(arr) {
-  answers]
-  
 
-}
 // CODE HERE
+//I had to look up the answers for this question. I kept screwing up the syntax on the "for"
+function bigOrSmall(arr){
+  let answers = [];
+  for(let i = 0; i < arr.length;i++){
+    if(arr[i] > 100){
+      answers.push('big')
+    } else {
+      answers.push('small')
+    }
+  } return answers
+}
+
+let numArr = [12,180,24,99,299,989,800]
+console.log(bigOrSmall(numArr))

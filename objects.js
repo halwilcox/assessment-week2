@@ -15,11 +15,15 @@
 */
 
 //CODE HERE
-
-
-
-
-
+let me = {
+  firstName: 'Haleigh',
+  state : 'Utah',
+  age: 30,
+greeter: function(){
+  return `Hi! I am ${me.firstName} from ${me.state}`
+},
+}
+console.log(me.greeter())
 //////////////////PROBLEM 2////////////////////
 /*
   Write a function called carFactory that takes in three parameters: a make, model, and year.  
@@ -45,3 +49,19 @@
 */
 
 //CODE HERE
+function carFactory(make,model,year){
+  let carOb = {
+    make: make,
+    model: model,
+    year: year,
+  }
+if(carOb.year > 2000){
+  carOb.isNew = true
+} else{
+  carOb.isNew = false
+} return carOb
+}
+
+
+let Delorean = carFactory('DMC','DeLorean','1982')
+console.log(Delorean)
